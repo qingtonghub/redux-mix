@@ -2,7 +2,6 @@
 import { normalize, schema } from 'normalizr'
 import { camelizeKeys } from 'humps'
 
-
 const getNextPageUrl = response => {
     const link = response.headers.get('link')
     if (!link) {
