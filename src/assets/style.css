@@ -1,0 +1,35 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+}
+.btns{
+    margin-top: 10px;
+}
+.btns button{
+    margin-left: 10px;
+    padding: 2px 5px;
+}
+.pro-box{
+    margin-top: 10px;
+    margin: 10px;
+}
+.pro-box h4{
+    margin-bottom: 10px;
+}
+.bor{
+    border-bottom: 1px solid #ccc;
+}
+.post-box{
+    margin-top: 20px;
+    padding: 20px;
+    height: 200px;
+    overflow: auto;
+}
