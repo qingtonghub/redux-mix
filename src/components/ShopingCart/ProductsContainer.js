@@ -4,22 +4,8 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
 import { getVisibleProducts } from '../../reducers/products'
-import ProductItem from './ProductItem'
+import ProductItem from './components/ProductItem'
 import { addToCart,getAllProducts } from '../../actions/shop'
-
-// const ProductsContainer = ({products, addToCart}) => {
-//     return(
-//         <div className="pro-box bor">
-//             <h4>Products</h4>
-//             {products.map(product => 
-//                 <ProductItem key={product.id}
-//                                 product={product}
-//                                 onAddToCartClicked={()=>addToCart(product.id)}/>
-//             )}
-//         </div>
-//     )
-// }
-
 
 class ProductsContainer extends Component {
     componentDidMount(){
@@ -49,7 +35,7 @@ ProductsContainer.propTypes = {
       price: PropTypes.number.isRequired,
       inventory: PropTypes.number.isRequired
     })).isRequired,
-    //addToCart: PropTypes.func.isRequired
+    addToCart: PropTypes.func.isRequired
 }
 
 export default connect(

@@ -1,15 +1,15 @@
-
+import { INCREMENT,DECREMENT } from '../actions/ActiveTypes'
 
 const counter = (state = {
     value: 0
 }, action) => {
     switch(action.type){
-        case 'INCREMENT':
+        case INCREMENT:
             return  {
                 ...state,
                 value: state.value + 1
             }
-        case 'DECREMENT':
+        case DECREMENT:
             return  {
                 ...state,
                 value: state.value - 1

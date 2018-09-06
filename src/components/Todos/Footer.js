@@ -1,15 +1,14 @@
 
 import React  from 'react'
-import Btn from './Btn'
-
-import { VisibilityFilters } from '../../actions/todo';
+import Btn from './components/Btn'
+import { SHOW_ALL, SHOW_ACTIVE,SHOW_COMPLETED } from '../../actions/ActiveTypes'
 
 const Footer = () => 
         <div className="btns">
             <span>Show:</span>
-            <Btn text={'All'} filter={VisibilityFilters.SHOW_ALL}/>
-            <Btn text={'Active'} filter={VisibilityFilters.SHOW_ACTIVE}/>
-            <Btn text={'Completed'} filter={VisibilityFilters.SHOW_COMPLETED}/>
+            <Btn text={'All SHOW_ALL'} filter={SHOW_ALL}/>
+            <Btn text={'Active SHOW_ACTIVE'} filter={SHOW_ACTIVE}/>
+            <Btn text={'Completed SHOW_COMPLETED'} filter={SHOW_COMPLETED}/>
         </div>
  
 export default Footer;

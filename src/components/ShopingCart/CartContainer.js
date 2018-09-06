@@ -3,9 +3,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
-import Cart from './Cart'
-
-// import { getTotal,getCartProducts } from '../../reducers'
+import Cart from './components/Cart'
 import { getTotal,getCartProducts } from '../../reducers/cart'
 import { checkout } from '../../actions/shop'
 
